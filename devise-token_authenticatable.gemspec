@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
 
-  spec.add_dependency "devise",                         ">= 4.0.0", "< 4.6.0"
+  spec.add_dependency "devise",                         ">= 4.0.0", "< 4.7.0"
 
   spec.add_development_dependency "rails",              "~> 4.2"
   spec.add_development_dependency "rspec-rails",        "~> 3.0"
@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
 
   # Fix database connection with sqlite3 and jruby
   if    RUBY_ENGINE == 'ruby'
-    spec.add_development_dependency "sqlite3",          "~> 1.3"
+    spec.add_development_dependency "sqlite3",          "~> 1.3.6"
   elsif RUBY_ENGINE == 'jruby'
     spec.add_development_dependency "activerecord-jdbcsqlite3-adapter"
   end
